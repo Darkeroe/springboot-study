@@ -2,6 +2,7 @@ package org.darkeroe.springboot.domain.posts;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.darkeroe.springboot.domain.BaseTimeEntity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -12,7 +13,7 @@ import javax.persistence.Id;
 @Getter
 @NoArgsConstructor
 @Entity // class will link table
-public class Posts {
+public class Posts extends BaseTimeEntity {
 
     @Id // PK
     @GeneratedValue(strategy = GenerationType.IDENTITY) // PK Rule
