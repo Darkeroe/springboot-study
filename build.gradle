@@ -37,6 +37,7 @@ dependencies {
 //    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
 //    testCompile("junit:junit:4.12")
     compile('org.springframework.boot:spring-boot-starter-mustache')
+    compile('org.springframework.boot:spring-boot-starter-oauth2-client')
 }
 //
 //test {
